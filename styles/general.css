@@ -3,12 +3,43 @@ body{
   margin:0px;
   padding:0px;
   background-color: #a28089;
+ 
   
 
 }
 
-.left-section
-{
-  display: flex;
-  align-items: center;
+.flag {
+  
+  position: relative;
+  height: 20em;
+  width: 40em;
+  background-image: repeating-linear-gradient(
+    #002a8f, #002a8f 50%,
+    white 0, white 100%
+  );
+  background-size: 100% 40%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  margin: 2em auto;
+}
+
+.flag::before {
+  content: '\2605';
+  position: absolute;
+  height: 100%;
+  width: 32%;
+  text-align: center;
+  color: #fff;
+  font-size: 6.5em;
+  line-height: 3.1;
+  z-index: 1;
+}
+
+.flag::after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 10em solid transparent;
+  border-bottom: 10em solid transparent;
+  border-left: 17.32em solid #cf142b;
 }
