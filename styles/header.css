@@ -1,0 +1,27 @@
+.header-grid
+{
+  height: 75px;
+  background:linear-gradient(#a28089, #ffa8B6);
+  display: flex;
+  align-items: center;
+}
+
+
+.portfolio-picture {
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  object-fit:cover;
+ padding: 0px 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+ul li {
+  list-style-type: none;
+  display: inline;
+
+}
+
