@@ -17,11 +17,25 @@
 
 a{
   text-decoration: none;
+  font-size: 18px;
   color: black;
+  font-weight: bold;
 }
 ul li {
   list-style-type: none;
   display: inline;
 
+}
+
+.game-header {
+  border-bottom: 2px solid white;
+}
+
+.game-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
