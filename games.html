@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MathToRemember</title>
+    <title>Games | MathToRemember</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/games.css" />
 </head>
 <body>
     <header class="bg-success text-white p-3">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="images/math/MathToRemember.png" alt="Alexander Diaz" class="rounded-circle" style="height: 60px; width: 60px;">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/math/MathToRemember.png" alt="MathToRemember Logo" class="rounded-circle" style="height: 60px; width: 60px;">
                 <h1 class="ml-3 mb-0">MathToRemember</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,35 +22,41 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="games.html" class="nav-link text-white">Games</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
                     <li class="nav-item"><a href="multiplication-practice2.html" class="nav-link text-white">Math</a></li>
-                    <li class="nav-item"><a href="short-stories.html" class="nav-link text-white">Short Stories</a></li>
+                    <li class="nav-item"><a href="games.html" class="nav-link text-white">Games</a></li>
+                    <li class="nav-item"><a href="#short-stories" class="nav-link text-white">Short Stories</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     
     <main class="container my-5">
-        <section class="introduction text-center mb-5">
-            <h2>Welcome to MathToRemember!</h2>
-            <p>Hello! I'm Alexander Diaz from Erie, PA, currently serving as an Application Engineer for National Ambulance. This website was inspired by my desire to assist my daughter in her studies. MathToRemember offers a range of educational tools and resources designed to help children excel in math and enjoy learning. From interactive games to engaging short stories, there's something here for every young learner. We hope you find these resources helpful and enjoyable.</p>
-        </section>
-        <section class="features row">
-            <div class="feature-item col-md-4 text-center mb-4">
-                <h3>Games</h3>
-                <p>Engage in fun and educational games like Rock, Paper, Scissors and more.</p>
-            </div>
-            <div class="feature-item col-md-4 text-center mb-4">
-                <h3>Math</h3>
-                <p>Practice multiplication and other math skills with interactive exercises.</p>
-            </div>
-            <div class="feature-item col-md-4 text-center mb-4">
-                <h3>Short Stories</h3>
-                <p>Read and enjoy short stories designed to entertain and educate.</p>
+        <section class="text-center mb-5">
+            <h2>Choose a Game to Play</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-6 col-md-3 mb-4">
+                    <a href="rock-paper-scissor.html">
+                        <img src="images/rock-paper-scissor/test.png" alt="Rock Paper Scissors" class="img-fluid">
+                        <p>Rock Paper Scissors</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <a href="stopwatch.html">
+                        <img src="images/stop-watch.png" alt="Stopwatch" class="img-fluid">
+                        <p>Stopwatch</p>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3 mb-4">
+                    <a href="tic-tac-toe.html">
+                        <img src="images/tic-tac-toe.png" alt="Tic Tac Toe" class="img-fluid">
+                        <p>Tic Tac Toe</p>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
-    
+
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <p>&copy; 2024 MathToRemember. All rights reserved.</p>
     </footer>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/math2.css">
+</head>
+<body>
+    <header class="bg-success text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/math/MathToRemember.png" alt="MathToRemember Logo" class="rounded-circle" style="height: 60px; width: 60px;">
+                <h1 class="ml-3 mb-0">MathToRemember</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+   <main>
+        <div class="container my-5">
+            <h2 class="text-center mb-5">Select a number to practice:</h2>
+            <div class="menu">
+                <div class="tabs row justify-content-center">
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(0)">0</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(1)">1</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(2)">2</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(3)">3</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(4)">4</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(5)">5</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(6)">6</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(7)">7</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(8)">8</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(9)">9</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(10)">10</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(11)">11</button>
+                    <button class="tab col-4 col-sm-2 m-2" onclick="selectNumber(12)">12</button>
+                </div>
+            </div>
+            <div class="quiz" id="quiz">
+                <h2 id="question" class="text-center my-4">Question will appear here</h2>
+                <div class="options row justify-content-center">
+                    <button class="option col-5 col-sm-2 m-2" onclick="checkAnswer(0)">Option 1</button>
+                    <button class="option col-5 col-sm-2 m-2" onclick="checkAnswer(1)">Option 2</button>
+                    <button class="option col-5 col-sm-2 m-2" onclick="checkAnswer(2)">Option 3</button>
+                    <button class="option col-5 col-sm-2 m-2" onclick="checkAnswer(3)">Option 4</button>
+                </div>
+                <div class="score text-center mt-4" id="score">Score: 0</div>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p>&copy; 2024 MathToRemember. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/math2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
