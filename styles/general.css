@@ -1,44 +1,56 @@
-body{
-
-  margin:0px;
-  padding:0px;
-  font-family: Roboto,Arial, Helvetica, sans-serif;
-  background-color: #a28089;
-
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
 }
 
-.flag {
-  
-  position: relative;
-  height: 20em;
-  width: 40em;
-  background-image: repeating-linear-gradient(
-    #002a8f, #002a8f 50%,
-    white 0, white 100%
-  );
-  background-size: 100% 40%;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-  margin: 2em auto;
+header .navbar-brand img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.flag::before {
-  content: '\2605';
-  position: absolute;
-  height: 100%;
-  width: 32%;
-  text-align: center;
-  color: #fff;
-  font-size: 6.5em;
-  line-height: 3.1;
-  z-index: 1;
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
 }
 
-.flag::after {
-  content: '';
-  position: absolute;
-  height: 0;
-  width: 0;
-  border-top: 10em solid transparent;
-  border-bottom: 10em solid transparent;
-  border-left: 17.32em solid #cf142b;
+.introduction {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h2 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+.nav-link {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+    font-size: 1em;
 }

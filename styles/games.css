@@ -15,6 +15,10 @@ header .navbar-brand img {
     border-radius: 50%;
     margin-right: 10px;
 }
+.nav-link {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
 
 header h1 {
     font-size: 1.8em;
@@ -27,9 +31,31 @@ main {
     text-align: center;
 }
 
-.js-result, .js-move, .js-score {
-    font-size: 1.5em;
-    margin-top: 20px;
+h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+
+.row .col-6 {
+    margin-bottom: 20px;
+}
+
+.row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.row img:hover {
+    transform: scale(1.05);
+}
+
+.row p {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
 }
 
 footer {

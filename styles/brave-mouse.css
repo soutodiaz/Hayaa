@@ -3,10 +3,10 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
-    color: #333;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: #333;
 }
 
 header .navbar-brand img {
@@ -21,22 +21,32 @@ header h1 {
     margin: 0;
 }
 
-main {
-    flex: 1;
+.story {
+    background-color: #ffffff;
     padding: 20px;
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.js-result, .js-move, .js-score {
-    font-size: 1.5em;
-    margin-top: 20px;
+.story h2 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.illustration {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.illustration img {
+    max-width: 100%;
+    border: 1px solid #2e8b57;
+    border-radius: 10px;
 }
 
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 20px 0;
     margin-top: auto;
     font-size: 1em;
 }
